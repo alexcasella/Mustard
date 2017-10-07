@@ -3,11 +3,10 @@ import numpy as np
 import cv2
 
 img = cv2.imread("/Users/alex/Desktop/Projects/Mustard/Images/sig.JPG")
-# img = img.convert("RGBA")
 Z = img.reshape((-1,3))
 
 img2 = Image.open('/Users/alex/Desktop/Projects/Mustard/Images/sig.JPG')
-# img2 = img2.convert("RGBA")
+img2 = img2.convert("RGBA")
 
 
 # convert to np.float32
